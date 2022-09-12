@@ -30,9 +30,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 Below is a GIF and images of Aram's Portfolio Space along with the URLs associated with the webpage and GitHUB Repository:
 
-Deployed Webpage URL: https://aasports89.github.io/My-Portfolio-Space/
+Deployed Webpage URL: https://aasports89.github.io/my-portfolio-space/
 
-GitHUB Repository URL: https://github.com/AASports89/My-Portfolio-Space
+GitHUB Repository URL: https://github.com/AASports89/my-portfolio-space
 
 ### Portfolio Gif
 
