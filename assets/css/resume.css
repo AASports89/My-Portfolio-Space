@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+#header{
+    background-image: linear-gradient(
+        rgba(93, 157, 252, 0.914) 0%,
+        rgb(17, 0, 203) 100%);
+}
+
+#head {
+    font-size: 200%;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#head:hover {
+    font-size: 150%;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+#contact {
+    font-size: 100%;
+    font-weight: bold;
+    background-image: linear-gradient(
+        rgba(207, 213, 221, 0.914) 0%,
+        rgb(123, 123, 129) 100%);
+}
+
+.card-header {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
