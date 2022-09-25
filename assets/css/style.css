@@ -17,11 +17,18 @@ body {
 
 header {
   display: inline-flex;
-  justify-content: space-evenly;
   background-image: linear-gradient(
   rgba(93, 157, 252, 0.914) 0%,
   rgb(17, 0, 203) 100%);
   border-bottom: solid 2px black;
+}
+
+.links {
+  padding-top: 15%;
+}
+
+.links:hover {
+  text-decoration: none;
 }
 
 h1 {
@@ -41,9 +48,34 @@ h1 {
 }
 
 #text {
-width: 25%; 
+width: 45%; 
 margin-top: 3%; 
 margin-left: 3%;
+}
+
+button {
+  width: 25%;
+  border: 1.5px solid black;
+  font-weight: bold;
+  border-radius: 0.5em;
+  font-size: 125%;
+  margin-right: 2.5%;
+  color: black;
+  background-image: linear-gradient(rgba(106, 106, 110, 0.974) 0%, rgb(225, 233, 242) 100%);
+}
+
+button:hover {
+  width:20%;
+}
+
+a {
+  color: black;
+}
+
+button:hover a {
+  color: whitesmoke;
+  font-size: 80%;
+  text-decoration: none;
 }
 
 h2 {
@@ -57,10 +89,50 @@ h2 {
 #story {
 width: 80%; 
 height: auto;
-margin-top: 15%;
+margin-top: 5%;
 margin-left: 10%;
 border-radius: 1em; 
 border: solid 1px black;
+}
+
+span[data-descr] {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  cursor: grab;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+span[data-descr]:hover::after {
+  content: attr(data-descr);
+  position: absolute;
+  left: 0px;
+  bottom: 24px;
+  min-width: 200px;
+  border: 1px black solid;
+  background-image: linear-gradient(
+    rgba(93, 157, 252, 0.914) 0%,
+    rgb(17, 0, 203) 100%);
+  padding: 12px;
+  color: #fff;
+  font-size: 100%;
+  z-index: 1;
+}
+
+.contacts {
+  display: inline-block;
+}
+
+li {
+  width: 150%;
+  border: 1px black solid;
+  border-radius: 0.25em;
+  background-image: linear-gradient(rgba(106, 106, 110, 0.974) 0%, rgb(225, 233, 242) 100%);
+}
+
+.CV {
+  border: none;
 }
 
 .container-fluid {
@@ -68,8 +140,7 @@ border: solid 1px black;
 }
 
 #MyDesigns {
-  background-color:
-    rgba(222, 222, 228, 0.954);
+  background-image: linear-gradient(rgba(195, 195, 205, 0.974) 0%, rgb(225, 233, 242) 100%);
 }
 
 #main {
@@ -89,25 +160,18 @@ p {
   font-size: 110%;
 }
 
+.nav-link {
+  border: none;
+}
+
+#toggle {
+  border: none;
+}
+
 h5 {
 text-align: center;
 font-size: 20px;
 color: var(--royal);
-}
-
-footer {
-  display: flex;
-  max-height: 100px;
-  justify-content: center;
-  padding: 2%;
-  background-color: var(--royal);
-  background-image: linear-gradient(
-    rgba(93, 157, 252, 0.914) 0%,
-    rgb(17, 0, 203) 100%);
-  color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: bold;
-  border-top: solid 2px black;
 }
 
 /**************************************** MOBILE DEVICE CONFIGURATIONS ****************************************/
@@ -180,32 +244,27 @@ footer {
     border: dashed 1.5px whitesmoke;
   }
   
-  #text {
-  width: 50%; 
-  margin-top: 3%; 
-  margin-left: 3%;
-  }
-
-  h1 {
-    font-size: 250%;
-  }
-
-  #story {
-    width: 150%;
-    height: auto;
-    margin-left: 0;
-    }
-
-  #bio {
-    margin-left: 15%;
-  }
-
-#btext {
-margin-left: 25%;
-font-size: 125%;
+#text {
+width: 50%; 
+margin-top: 3%; 
+margin-left: 3%;
 }
 
-  .btn {
-    font-size: 65%;
-  }
+h1 {
+  font-size: 250%;
+}
+
+#story {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+}
+
+#btext {
+  font-size: 125%;
+}
+
+.btn {
+  font-size: 65%;
+}
 }

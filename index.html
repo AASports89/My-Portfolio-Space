@@ -10,28 +10,25 @@
   </head>
 
     <header>
-      <div style="width: 100%; height: auto" class="card-body">
-        <img id="header" src="./assets/images/logo.jpg" class="card-img" alt="Aram's Portfolio Space">
+      <div style="width: 100%; height: auto" class="col-md-6">
+        <img id="header" src="./assets/images/logo.jpg" alt="Aram's Portfolio Space" class="card-img" alt="Aram's Portfolio Space">
         <div id="text" class="card-img-overlay">
           <h1>Aram's Portfolio Space</h1>
         </div>
       </div>
-      <div class="col-md-5">
-        <nav style="padding-top: 25%" class="navbar navbar-light bg-transparent">
-          <span style="font-size: 200%" class="navbar-text">
-            <a style="color: whitesmoke" class="badge badge-primary" href="#MyStory">My Story</a>
-            <a style="color: whitesmoke" class="badge badge-primary" href="#MyDesigns">My Designs</a>
-            <a style="color: whitesmoke" class="badge badge-primary" href="#ContactMe">Contact Me</a>
-          </span>
+      <div class="col-md-6">
+          <ul class="links">
+            <button><a style="margin-right: 5%" href="#MyStory">My Story</a></button>
+            <button><a style="margin-right: 5%" href="#MyDesigns">My Designs</a></button>
+            <button><a href="#story">Contact Me</a></button>
+          </ul>
         </nav>
       </div>
     </header>
-  
-    <div class="container-fluid">
 
-      <div class="container">
-      <div id="MyStory" class="row no-gutters">
-        <div class="col-sm-6 col-md-8">
+  <div class="container">
+      <div id="MyStory" class="row no-gutters" style="padding-top: 2%">
+        <div class="col-md-8">
           <h2>My Story</h2>
                 <p>
                   I grew up in Los Angeles, CA enjoying the beach, hiking, and all
@@ -39,7 +36,7 @@
                   Golden State. Although, technology had always fascinated me I never
                   imagined the possibility of pursuing a career tied to computer science.
                   My background is tightly bound to the field of healthcare as I am a
-                  Pharmacist by trade, feel free to take a peak at my Curriculum Vitae 
+                  Pharmacist by trade, feel free to take a peak at my <a class="CV" href="./CV.html">Resume</a>
                   via the provided link.
                 </p>
                 <p>
@@ -56,93 +53,70 @@
                 </p>
         </div>
 
-        <div id="bio" class="col-6 col-md-4">
-          <div class="col">
-            <img id="story" src="./assets/images/headshot.jpg" alt="Aram Avakyan, Pharm.D."/>
-          </div>
-          <div id="btext" style="text-align:center" class="col">
-          <p style="font-weight:bold">Aram Avakyan, Pharm.D.<p> 
-          <ul>
-           <li><a style="font-size: 17px" href="./CV.html">Curriculum Vitae</a></li>
+  <div id="bio" class="col-md-4">
+      <img id="story" src="./assets/images/headshot.jpg" alt="Aram Avakyan, Pharm.D."/>
+      <div id="btext" style="text-align:center" class="col">
+        <ul class="contact">
+          <p style="font-weight: bold">Aram Avakyan, Pharm.D.<p>
+          <ul style="margin-left: -5%" class="contacts justify-content-center">
+            <li><span data-descr="https://github.com/AASports89">GitHUB</li></span>
+            <li><span data-descr="(818) 624-1955">Direct</li></span>
+            <li><span data-descr="aavakyan16@students.kgi.edu">Email</li></span>
           </ul>
-        </div>   
+        </ul>
+      </div>
+  </div>
+
+  <div style="border: solid 2.5px black; border-radius: 0.5em; padding-bottom: 2%" class="container justify-content-center" id="MyDesigns">
+      <h2>My Designs</h2>
+        <div style="padding-bottom: 2%; padding-left: 1%; border-bottom: 1.5px dashed black" class="row">
+          <form action="https://aasports89.github.io/Event-Fan-Follow/">
+            <span>
+              <button class="btn btn-outline-primary">Explore: Event Fan Follow</button>
+                  <img id="main" src="./assets/images/event-fan-follow.gif" alt="https://aasports89.github.io/Event-Fan-Follow/">
+            </span>
+          </form>
+        </div>
+
+      <div class="row" style="padding-top: 2%; padding-bottom: 2%; border-bottom: dashed 1.5px black">
+          <div style="border-right: dashed 1.5px black" class="col-6">
+            <form action="https://aasports89.github.io/Git-Your-Weather/">
+              <span>
+                <button class="btn btn-outline-primary">Explore: Git Your Weather</button>
+                  <img id="sec" src="./assets/images/gitweather.gif" alt="https://aasports89.github.io/Git-Your-Weather/">
+              </span>
+            </form>
+          </div>
+
+          <div class="col-6">
+            <form action="https://git-your-notes.herokuapp.com/">
+              <span>
+                <button class="btn btn-outline-primary">Explore: Git Your Notes</button>
+                  <img id="sec" src="./assets/images/note-taker.gif" alt="Git Your Notes">
+              </span>
+            </form>
+          </div>
+      </div>
+
+      <div class="row" style="padding-top: 2%">
+        <div style="border-right: dashed 1.5px black" class="col-6">
+            <form action="https://aasports89.github.io/secret-password-generator/">
+                <span>
+                  <button class="btn btn-outline-primary">Explore: PassWord GeneRator</button>
+                      <img id="sec" src="./assets/images/passgen.gif" alt="https://aasports89.github.io/secret-password-generator/">
+                </span>
+            </form>
+        </div>
+
+        <div class="col-6">
+            <form action="https://aasports89.github.io/plan-my-day/">
+                <span>
+                    <button class="btn btn-outline-primary">Explore: Plan My Day</button>
+                      <img id="sec" src="./assets/images/plan-my-day.gif" alt="https://aasports89.github.io/plan-my-day/">
+                </span>
+            </form>
         </div>
       </div>
-    </div>
+  </div>
 
-          <div style="border: solid 2.5px black; border-radius: 0.5em" class="container" id="MyDesigns">
-            <h2>My Designs</h2>
-          
-            <div style="padding-bottom: 2%; padding-top: 2%" class="col">
-              <form action="https://aasports89.github.io/Event-Fan-Follow/">
-                <span>
-                <button class="btn btn-outline-primary">Explore: Event Fan Follow</button>
-                  <img id="main" src="./assets/images/event-fan-follow.gif" alt="https://aasports89.github.io/Event-Fan-Follow/">
-                </span>
-                </form>
-              </div>
-
-              <div style="border-top: solid 1.5px black; padding-top: 2%; padding-bottom: 2%" class="container px-lg-5">
-                
-                  <div class="row row-cols-2">
-
-                    <div style="border-right: dashed 1.5px black; border-bottom: dashed 1.5px black; padding-bottom: 2%" class="col"><form action="https://aasports89.github.io/Git-Your-Weather/">
-                      <span>
-                      <button class="btn btn-outline-primary">Explore: Git Your Weather</button>
-                      <img id="sec" src="./assets/images/gitweather.gif" alt="https://aasports89.github.io/Git-Your-Weather/">
-                      </span>
-                      </form>
-                    </div>
-
-                    <div style="border-bottom: dashed 1.5px black; padding-bottom: 2%" class="col">
-                      <form action="https://aasports89.github.io/plan-my-day/">
-                        <span>
-                        <button class="btn btn-outline-primary">Explore: Plan My Day</button>
-                          <img id="sec" src="./assets/images/plan-my-day.gif" alt="https://aasports89.github.io/plan-my-day/">
-                        </span>
-                        </form>
-                    </div>
-
-                    <div style="border-right: dashed 1.5px black; padding-top: 2%" class="col">
-                      <form action="https://aasports89.github.io/secret-password-generator/">
-                        <span>
-                        <button class="btn btn-outline-primary">Explore: PassWord GeneRator</button>
-                        <img id="sec" src="./assets/images/passgen.gif" alt="https://aasports89.github.io/secret-password-generator/">
-                        </span>
-                        </form>
-                    </div>
-
-                    <div style="padding-top: 2%" class="col">
-                      <form action="https://aasports89.github.io/jscript-quiz-bowl/">
-                        <span>
-                        <button class="btn btn-outline-primary">Explore: Java$cript Quiz Bowl</button>
-                        <img id="sec" src="./assets/images/quiz-bowl.gif" alt="https://aasports89.github.io/jscript-quiz-bowl/">
-                        </span>  
-                        </form> 
-                    </div>
-                  </div>
-                </div>
-      
-          <div id="ContactMe" class="container">
-            <h2>Contact Me</h2>
-              <nav class="navbar navbar-light bg-light">
-                <ul class="nav">
-                  <li style="padding-right: -20%" class="nav-item">
-                    <a style="font-size: 150%" class="nav-link active" href="#">Email:aavakyan16@students.kgi.edu</a>
-                  </li>
-                  <li style="padding-right: -20%" class="nav-item">
-                    <a style="font-size: 150%" class="nav-link" href="#">Direct: (818) 624-1955</a>
-                  </li>
-                  <li style="padding-right: -20%" class="nav-item">
-                    <a style="font-size: 150%" class="nav-link" href="https://github.com/AASports89">GitHUB</a>
-                  </li>
-                </ul>
-              </nav>
-          </div>    
-
-<footer style="font-size: 125%">
-  “Life would be much easier if I had the source code.”
-      ― Anonymous
-  </footer>   
-   
 </html>
